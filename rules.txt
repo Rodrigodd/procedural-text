@@ -1,0 +1,36 @@
+<inicio>\n<meio>\n<fim>
+
+# inicio
+Era uma vez um <profissão> chamado <nome>.
+
+# meio
+Porém um dia <algo aconteceu>.
+
+# fim
+Devido a isso <consequencia>.
+
+# profissão
+homem
+aventureiro
+fazendeiro
+agricultor
+
+# nome
+João
+Mário
+Marcelo
+Renato Pereira
+
+# algo aconteceu
+ele foi picado por <animal>
+nada aconteceu
+
+# animal
+uma cobra
+um rato
+um mosquito
+uma tarântula
+
+# consequencia
+ele morreu
+ele descobriu a cura do cancêr

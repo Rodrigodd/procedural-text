@@ -1,17 +1,41 @@
 body {
     font-family: monospace;
-    font-size: large;
+    font-size: 20px;
+    white-space: pre-line;
     color: white;
     background-color: #000018;
 }
 
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.text-area {
+    height: 80%;
+    display: table;
+}
+
 #generated {
+    display: table-cell;
     color: yellow;
-    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     width: 100px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px; /* margin is -0.5 * dimension */
-    margin-top: -25px; 
 }
