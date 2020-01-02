@@ -1,15 +1,5 @@
 let text_elem;
-
-var rawFile = new XMLHttpRequest();
-rawFile.open("GET", "rules.txt", false);
-rawFile.onreadystatechange = function() {
-  if (rawFile.readyState === 4) {
-    if (rawFile.status === 200 || rawFile.status == 0) {
-        rule_text = rawFile.responseText;
-    }
-  }
-};
-rawFile.send(null);
+let rules;
 
 function parseText(text) {
     let lines = text.split("\n");
@@ -21,8 +11,8 @@ function parseText(text) {
             continue;
         }
         line = line.replace(/\\n/g, "\n");
-        if (line.startsWith("#")) {
-            scope = line.slice(1).trim();
+        if (line.endsWith(":")) {
+            scope = line.slice(0,-1).trim();
         } else {
             if (obj[scope] == undefined)  obj[scope] = [];
             obj[scope].push(line);
@@ -30,7 +20,6 @@ function parseText(text) {
     }
     return obj;
 }
-let rules = parseText(rule_text);
 
 function generateText() {
     let r = Math.floor(Math.random()*rules["main"].length);
@@ -119,7 +108,6 @@ function typingEffect(txt) {
 
 function onGenButton() {
     generateText();
-    console.log(text_elem.innerHTML);
 }
 
 window.addEventListener('load', function () {

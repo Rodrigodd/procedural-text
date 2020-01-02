@@ -4,11 +4,15 @@
         <script src="main.js"></script>
     </head>
     <body>
-        <div class="vertical">
-            <div class="text-area">
-                <div id="generated">Hello <mark>World!!</mark></div>
+        <div class="horizontal">
+            <div class="vertical">
+                <div class="text-area">
+                    <div id="generated">Hello World!!</div>
+                </div>
+                <button onclick="onGenButton()">Gerar</button>
             </div>
-            <button onclick="onGenButton()">Gerar</button>
+            <div id="editor" contentEditable="true"> </div>
+            <script src="editor.js"></script>
         </div>
     </body>
 </html>

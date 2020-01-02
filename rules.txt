@@ -1,36 +1,51 @@
 <inicio>\n<meio>\n<fim>
-
-# inicio
+inicio:
 Era uma vez um <profissão> chamado <nome>.
-
-# meio
-Porém um dia <algo aconteceu>.
-
-# fim
-Devido a isso <consequencia>.
-
-# profissão
+profissão:
 homem
 aventureiro
 fazendeiro
 agricultor
-
-# nome
+nome:
 João
 Mário
 Marcelo
 Renato Pereira
-
-# algo aconteceu
+algo aconteceu:
 ele foi picado por <animal>
 nada aconteceu
-
-# animal
+teve sorte:
+encontrou uma poção mágica, que <fazia algo>
+avistou de longe <de longe>
+de longe:
+uma pilha de ouro, com <muito mesmo> dinheiro
+uma base subterrânea, guardada por <guardas>
+muito mesmo:
+muito
+muito <muito mesmo>
+muito <muito mesmo> mesmo
+guardas:
+guardas
+bestas
+fazia algo:
+curava todas as doenças
+lhe dava grande capacidade de <capacidade>
+capacidade:
+subir em árvores
+pensar
+de ser capaz
+animal:
 uma cobra
 um rato
 um mosquito
 uma tarântula
-
-# consequencia
+consequência:
 ele morreu
-ele descobriu a cura do cancêr
+ele descobriu a cura do câncer
+ele acendeu um plano
+meio:
+Porém um dia <algo aconteceu>.
+Por sorte, <teve sorte>.
+fim:
+Devido a isso <consequência>.
+O que lhe marcou pelo resto de sua vida.
